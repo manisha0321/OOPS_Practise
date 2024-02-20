@@ -5,7 +5,13 @@ class Hero{
     public:
     int health=40;
     void setlevel(char l){
+        int pass;
+        cout<<"Please enter password: ";
+        cin>>pass;
+        if(pass==123)
         level=l;
+        else
+        cout<<"Not correct!!!"<<endl;
     }
     char getlevel(){
         return level;
@@ -14,8 +20,9 @@ class Hero{
 int main(){
     Hero ramesh;
     char l;
+    char pass;
     cout<<"What value you want to set for level:  "<<endl;
     cin>>l;
     ramesh.setlevel(l);
-    cout<<"New level of ramesh is: "<<ramesh.getlevel();
+    cout<<"Level of ramesh is: "<<ramesh.getlevel();
 }
