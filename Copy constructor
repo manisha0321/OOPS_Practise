@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+class Hero{
+    public:
+    int a, b;
+    //Parameterized constructor
+    Hero (int x, int y)
+    {
+        a=x;
+        b=y;
+    }
+};
+int main(){
+    Hero c(30, 40);
+    Hero d(c);//Copy constructor 
+    cout<<"Value of a and b for c are: "<<c.a<<" and "<<c.b<<endl;
+    cout<<"Value of a and b for d are: "<<d.a<<" and "<<d.b<<endl;
+}
