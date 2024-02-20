@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+class Hero{
+    char level='A';
+    public:
+    int health=40;
+    Hero(){
+        cout<<"Default constructor called"<<endl;
+    }
+};
+int main(){
+    Hero a;
+}
