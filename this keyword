@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+class Hero{
+    char level='A';
+    public:
+    int health=40;
+    Hero (int health){
+        cout<<"Address of this: "<<this<<endl;
+        this ->health=health; //this keyword store the address of current object
+    }
+};
+int main(){
+    Hero a(80);
+    cout<<"Address of a: "<<&a<<endl; 
+    cout<<"New health of a: "<<a.health<<endl;
+}
