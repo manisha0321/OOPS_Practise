@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+class Hero{
+    char level='A';
+    public:
+    int health=40;
+    ~Hero(){
+        cout<<"Default destructor called"<<endl;
+    }
+};
+int main(){
+    //Static 
+    Hero a;
+    //Dynamic
+    Hero *b=new Hero();
+    delete b;//manualyy call destructor for dynamic
+}
