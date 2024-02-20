@@ -19,7 +19,7 @@ int main(){
     a.getlevel();
     //Dynamic allocation
     Hero *b=new Hero;
-    b->setlevel('C');
+    b->setlevel('C');//Or (*b).setlevel('C');
     cout<<"Dynamically: ";
     b->getlevel();
 }
