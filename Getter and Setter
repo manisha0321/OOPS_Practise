@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+class Hero{
+    char level='A';
+    public:
+    int health=40;
+    void setlevel(char l){
+        level=l;
+    }
+    char getlevel(){
+        return level;
+    }
+};
+int main(){
+    Hero ramesh;
+    char l;
+    cout<<"What value you want to set for level:  "<<endl;
+    cin>>l;
+    ramesh.setlevel(l);
+    cout<<"New level of ramesh is: "<<ramesh.getlevel();
+}
