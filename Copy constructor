@@ -9,6 +9,12 @@ class Hero{
         a=x;
         b=y;
     }
+    //Copy constructor
+    Hero (Hero &c)
+    {
+        this->a=c.a;
+        this->b=c.b;
+    }
 };
 int main(){
     Hero c(30, 40);
