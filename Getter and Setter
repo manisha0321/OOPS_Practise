@@ -5,10 +5,10 @@ class Hero{
     public:
     int health=40;
     void setlevel(char l){
-        int pass;
+        string pass;
         cout<<"Please enter password: ";
         cin>>pass;
-        if(pass==123)
+        if(pass=="Manisha")
         level=l;
         else
         cout<<"Not correct!!!"<<endl;
