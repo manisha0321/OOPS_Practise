@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+class Hero{
+    char level='A';
+    public:
+    int health=40;
+    void setlevel(char l){
+        level=l;
+    }
+    char getlevel(){
+        cout<<level<<endl;
+    }
+};
+int main(){
+    //Static allocation
+    Hero a;
+    a.setlevel('B');
+    cout<<"Statically: ";
+    a.getlevel();
+    //Dynamic allocation
+    Hero *b=new Hero;
+    b->setlevel('C');
+    cout<<"Dynamically: ";
+    b->getlevel();
+}
