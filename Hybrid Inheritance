@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+class Parent{
+    public:
+    void display1(){
+        cout<<"This is parent class"<<endl;
+    }
+};
+class Child: public Parent{
+    public:
+    void display2(){
+        cout<<"This is child class"<<endl;;
+    }
+};
+class baby: public Parent{
+    public:
+    void display3(){
+        cout<<"This is baby class"<<endl;
+    }
+};
+int main(){
+    baby obj1;
+    obj1.display1();
+    obj1.display3();
+    Child obj2;
+    obj2.display1();
+    obj2.display2();
+}
