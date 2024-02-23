@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+class Parent{
+    public:
+    void sum(){
+        cout<<"This is parent class"<<endl;
+    }
+};
+class Child: public Parent{
+    public:
+    void sum(){
+        cout<<"This is child class"<<endl;
+    }
+};
+int main(){
+    Child obj;
+    obj.sum();
+}
