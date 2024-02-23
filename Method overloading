@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+class Parent{
+    public:
+    void sum(){
+        cout<<"This is sum function"<<endl;
+    }
+    void sum(int a ){
+        cout<<"This is a sum function"<<endl;
+    }
+    void sum(int b, int c){
+        cout<<"This is b sum function"<<endl;
+    }
+};
+
+int main(){
+    int a, b, c;
+    Parent obj;
+    obj.sum();
+    obj.sum(a);
+    obj.sum(b,c);
+}
